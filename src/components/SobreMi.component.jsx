@@ -57,6 +57,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-evenly",
+    alignItems: "center",
     [theme.breakpoints.down("xs")]: {
       flexDirection: "column-reverse",
       justifyContent: "center",
