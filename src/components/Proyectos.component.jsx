@@ -57,7 +57,7 @@ const proyectos = [
     imagen: require("../assets/portafolio.png"),
     descripcion: "Portafolio sencillo para mostrar mis aptitudes e información",
     herramientas: ["React", "Material-UI"],
-    codigo: "https://www.linkamiportafolio.com",
+    codigo: "https://github.com/ByronMunozG/portafolio",
   },
 ];
 

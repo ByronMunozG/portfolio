@@ -57,7 +57,7 @@ const CardProyecto = ({ proyecto }) => {
             color="secondary"
             endIcon={<GitHub />}
             style={{ marginTop: 10 }}
-            href={proyecto.url}
+            href={proyecto.codigo}
             target="_blank"
             rel="noopener noreferrer"
           >
