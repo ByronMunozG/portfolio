@@ -7,7 +7,7 @@ import {
   CardMedia,
   Button,
 } from "@material-ui/core";
-import { OpenInNew, GitHub } from "@material-ui/icons";
+import { OpenInNew, GitHub, Facebook } from "@material-ui/icons";
 
 const CardProyecto = ({ proyecto }) => {
   const classes = useStyles();
@@ -40,10 +40,10 @@ const CardProyecto = ({ proyecto }) => {
         <br />
         {proyecto.url && (
           <Button
+            className={classes.button}
             variant="contained"
             color="secondary"
             endIcon={<OpenInNew />}
-            style={{ marginTop: 10 }}
             href={proyecto.url}
             target="_blank"
             rel="noopener noreferrer"
@@ -53,15 +53,28 @@ const CardProyecto = ({ proyecto }) => {
         )}
         {proyecto.codigo && (
           <Button
+            className={classes.button}
             variant="contained"
             color="secondary"
             endIcon={<GitHub />}
-            style={{ marginTop: 10 }}
             href={proyecto.codigo}
             target="_blank"
             rel="noopener noreferrer"
           >
             Ver Codigo
+          </Button>
+        )}
+        {proyecto.fb && (
+          <Button
+            className={classes.button}
+            variant="contained"
+            color="secondary"
+            endIcon={<Facebook />}
+            href={proyecto.fb}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver Página
           </Button>
         )}
       </CardContent>
@@ -87,6 +100,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       maxWidth: "100%",
     },
+  },
+  button: {
+    marginTop: 10,
+    marginRight: 5,
   },
 }));
 

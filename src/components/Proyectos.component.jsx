@@ -51,6 +51,7 @@ const proyectos = [
       "SCSS",
     ],
     url: "https://www.chilepostbot.cl/",
+    fb: "https://www.facebook.com/chileposting1810",
   },
   {
     nombre: "Portafolio",
