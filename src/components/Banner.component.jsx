@@ -24,8 +24,8 @@ const Banner = () => {
         <br />
         <Typography variant="subtitle1">
           Full Stack Developer residente en Santiago de Chile. Me encanta la
-          informática en todas sus áreas y actualmente me enfoco en el
-          desarrollo web.
+          informática en todas sus áreas y actualmente trabajo desarollando
+          proyectos IoT con React
         </Typography>
         <br />
         <Grid container item justify="center" className={classes.botones}>

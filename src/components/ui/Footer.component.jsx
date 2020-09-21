@@ -23,7 +23,7 @@ const Footer = () => {
             item
             className={classes.iconContainer}
             component={"a"}
-            href="https://www.linkedin.com/in/byron-mu%C3%B1oz-godoy/"
+            href="https://www.linkedin.com/in/byron-munoz-godoy/"
             target="_blank"
             rel="noopener noreferrer"
           >

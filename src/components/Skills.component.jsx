@@ -58,6 +58,8 @@ const Skills = () => {
               variant="body1"
               className={classes.normalText}
             >
+              React-native
+              <br />
               CSS/SCSS
               <br />
               Redux-Saga

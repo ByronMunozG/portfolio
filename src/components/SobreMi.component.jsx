@@ -16,8 +16,8 @@ const SobreMi = () => {
         <Grid item className={classes.sobreMiItem}>
           <Typography variant="body1" paragraph>
             Hola! Tengo 23 años y me ha gustado la tecnologia desde que tengo
-            memoria. Actualmente me desenvuelvo de manera Fullstack en
-            desarrollo web.
+            memoria. Actualmente trabajo como desarrollador front-end con React
+            creando proyectos IoT
             <br />
             <br />
             Mi carrera comenzó el 2015 en Ing. Civil Informática en la

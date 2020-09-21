@@ -41,7 +41,7 @@ const proyectos = [
     nombre: "Chilepostbot",
     imagen: require("../assets/chilepostbot.png"),
     descripcion:
-      "Una aplicacion full-stack para un proyecto personal. El usuario puede crear una cuenta, subir imagenes y ver imagenes cargadas por otros usuarios.",
+      "*WIP* Una aplicacion full-stack para un proyecto personal. El usuario puede crear una cuenta, subir imagenes y ver imagenes cargadas por otros usuarios. (WIP refactorizando y actualizando a Nextjs)",
     herramientas: [
       "React",
       "Redux",
@@ -50,13 +50,14 @@ const proyectos = [
       "Cloudinary",
       "SCSS",
     ],
-    url: "https://www.chilepostbot.cl/",
-    fb: "https://www.facebook.com/chileposting1810",
+    /*     url: "https://www.chilepostbot.cl/",
+    fb: "https://www.facebook.com/chileposting1810", */
   },
   {
     nombre: "Portafolio",
     imagen: require("../assets/portafolio.png"),
-    descripcion: "Portafolio sencillo para mostrar mis aptitudes e información",
+    descripcion:
+      "Portafolio sencillo para mostrar mis aptitudes e información. (Desactualizado, actualmente refactorizandolo utilizando la experiencia que he ganado)",
     herramientas: ["React", "Material-UI"],
     codigo: "https://github.com/ByronMunozG/portafolio",
   },
