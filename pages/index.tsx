@@ -83,13 +83,13 @@ const Home = () => {
             Work
           </Heading>
           <Paragraph>
-            Byron is a full-stack developer based in Santiago with a passion for
-            learning different topics related to programing/computer stuff. He
-            has a knack for learning things fast, problem solving and finding
-            bugs. When not online, he loves hanging out with his wife and cats,
-            or sometimes he is playing Fifa. Currently, he is working on a start
-            up called Temis (ERP App) and in his free time working on his side
-            project called{" "}
+            Byron is a full-stack developer based in Santiago, Chile. With a
+            passion for learning different topics related to
+            programming/computer stuff. He has a knack for learning things fast,
+            problem-solving and finding bugs. When not online loves hanging out
+            with his wife and cats, or sometimes he is playing Fifa. Currently,
+            he is working on a start-up called Temis (ERP App). In his free
+            time, he works on his side project called{" "}
             <NextLink href="/works/chilepostbot" passHref scroll={false}>
               <Link>Chilepostbot 1810</Link>
             </NextLink>
@@ -113,14 +113,19 @@ const Home = () => {
             Born in Santiago, Chile.
           </BioSection>
           <BioSection>
-            <BioYear>2015 - 2017</BioYear>3 complete years of computer science
-            engineering (Ingeniería Civil en Informática) on Andrés Bello
+            <BioYear>2015 - 2017</BioYear>Three years of computer science
+            engineer (<q>Ingeniería Civil en Informática</q>) - Andrés Bello
             National University (drop out).
           </BioSection>
           <BioSection>
+            <BioYear>2018 - 2020</BioYear>
+            Freelance Developer
+          </BioSection>
+          <BioSection>
             <BioYear>2018 - 2021</BioYear>
-            Degree as Computer Programmer Analyst (Analista Programador
-            Computacional) with 2 votes of distinction.
+            Degree as Computer Programmer Analyst (
+            <q>Analista Programador Computacional</q> ) with 2 votes of
+            distinction.
           </BioSection>
           <BioSection>
             <BioYear>2020</BioYear>
@@ -129,8 +134,9 @@ const Home = () => {
           </BioSection>
           <BioSection>
             <BioYear>2020 to present</BioYear>
-            Works as a tech lead, full-stack developer and devops engineer
-            building a ERP App on a start up called Temis Technology.
+            Works as a Full-stack developer and sometimes a DevOps engineer with
+            the role of tech lead building an ERP App on a start-up called Temis
+            Technology.
           </BioSection>
         </Section>
 
@@ -202,14 +208,14 @@ const Home = () => {
               title="react-image-area"
               thumbnail={thumbReactImageArea}
             >
-              My first attempt making a React Component Library.
+              First attempt at making a component library with React.
             </GridItem>
             <GridItem
               href="/works/chilepostbot"
               title="Chilepostbot 1810"
               thumbnail={thumbChilepostbot}
             >
-              A bot that post random generated memes to social media.
+              A bot that posts randomly generated memes to social media.
             </GridItem>
           </SimpleGrid>
         </Section>

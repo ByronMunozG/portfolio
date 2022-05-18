@@ -12,8 +12,8 @@ const Work = () => (
         @bmunozg/react-image-area <Badge>2022</Badge>
       </Title>
       <P>
-        My first attempt making a React Component Library. I made it for using
-        it on my side project{" "}
+        The first attempt at making a component library with React, I made it
+        for use on my side project called{" "}
         <NextLink href="/works/chilepostbot" passHref scroll={false}>
           <Link>Chilepostbot 1810</Link>
         </NextLink>
@@ -25,8 +25,9 @@ const Work = () => (
         >
           The library <ExternalLinkIcon mx="2px" />
         </Link>
-        consist on a component to select areas of an image, support touch
-        selection, custom renderer, responsive (can use pixels or percentages).
+        consists of a component to select areas of an image, supporting touch
+        selection and a custom renderer. Additionally, you can choose the
+        selection unit between pixels and percentages.
       </P>
 
       <List ml={4} my={4}>

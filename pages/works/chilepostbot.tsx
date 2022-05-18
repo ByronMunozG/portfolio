@@ -9,15 +9,15 @@ const Work = () => (
       <Title>
         Chilepostbot 1810 <Badge>2022</Badge>
       </Title>
-      <P>A bot that post random generated memes to social media.</P>
+      <P>A bot that posts randomly generated memes to social media.</P>
       <P>
-        The bot is a work in progress, a new improved version will be made and
-        probably more bots will be added as the project progresses.
+        Currently, this bot is getting updated. An improved version is underway,
+        adding more bots in the future.
       </P>
       <P>
-        It is being remade from scratch to make it more scalable and so it is
-        easier for me to add new features. since the first version I did was
-        with much less experience than I have now
+        It is being redone from scratch to make it more scalable and easy to add
+        new features since I made the first version with much less experience
+        than the one I have now.
       </P>
 
       <List ml={4} my={4}>
