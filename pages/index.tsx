@@ -123,8 +123,8 @@ const Home = () => {
           </BioSection>
           <BioSection>
             <BioYear>2018 - 2021</BioYear>
-            Degree as Computer Programmer Analyst (
-            <q>Analista Programador Computacional</q> ) with 2 votes of
+            Bachelor&apos;s degree as computer programmer analyst (
+            <q>Analista Programador Computacional</q> ) with two votes of
             distinction.
           </BioSection>
           <BioSection>
