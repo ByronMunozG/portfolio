@@ -49,7 +49,7 @@ const Home = () => {
             <Heading as="h2" variant="page-title">
               Byron Mu&#241;oz
             </Heading>
-            <p> Developer / Designer</p>
+            <p> Full-Stack Developer</p>
           </Box>
           <Box
             flexShrink={0}
@@ -85,11 +85,12 @@ const Home = () => {
           <Paragraph>
             Byron is a full-stack developer based in Santiago, Chile. With a
             passion for learning different topics related to
-            programming/computer stuff. He has a knack for learning things fast,
-            problem-solving and finding bugs. When not online loves hanging out
-            with his wife and cats, or sometimes he is playing Fifa. Currently,
-            he is working on a start-up called Temis (ERP App). In his free
-            time, he works on his side project called{" "}
+            programming/technology stuff. He has a knack for learning things
+            fast, problem-solving and finding bugs. When he&apos;s not online
+            loves hanging out with his wife and cats, sometimes playing Xbox and
+            watching TV. Currently, he is working on a company called Option
+            with a project for BHP. In his free time, he works on his side
+            project called{" "}
             <NextLink href="/works/chilepostbot" passHref scroll={false}>
               <Link>Chilepostbot 1810</Link>
             </NextLink>
@@ -109,34 +110,39 @@ const Home = () => {
             Bio
           </Heading>
           <BioSection>
-            <BioYear>1997</BioYear>
-            Born in Santiago, Chile.
+            <BioYear>2022 to present</BioYear>
+            Works as a Full-stack developer on a project for BHP in a company
+            called Option.
           </BioSection>
           <BioSection>
-            <BioYear>2015 - 2017</BioYear>Three years of computer science
-            engineer (<q>Ingeniería Civil en Informática</q>) - Andrés Bello
-            National University (drop out).
+            <BioYear>2020 - 2022</BioYear>
+            Worked as a Full-stack developer and sometimes a DevOps engineer
+            with the role of tech lead building an ERP App on a start-up called
+            Temis Technology.
+          </BioSection>
+          <BioSection>
+            <BioYear>2020</BioYear>
+            Worked as a React developer in 2 projects from a start up called
+            Wisely/Track & Trace.
+          </BioSection>
+          <BioSection>
+            <BioYear>2018 - 2021</BioYear>
+            Higher technical degree in Computer Analyst Programming (
+            <q>Analista Programador Computacional</q> ) with two votes of
+            distinction.
           </BioSection>
           <BioSection>
             <BioYear>2018 - 2020</BioYear>
             Freelance Developer
           </BioSection>
           <BioSection>
-            <BioYear>2018 - 2021</BioYear>
-            Bachelor&apos;s degree as computer programmer analyst (
-            <q>Analista Programador Computacional</q> ) with two votes of
-            distinction.
+            <BioYear>2015 - 2017</BioYear>Three years of computer science
+            engineer (<q>Ingeniería Civil en Informática</q>) - Andrés Bello
+            National University (drop out due to financial problems).
           </BioSection>
           <BioSection>
-            <BioYear>2020</BioYear>
-            Worked as a React developer in 2 projects from a start up called
-            Track & Trace/Wisely.
-          </BioSection>
-          <BioSection>
-            <BioYear>2020 to present</BioYear>
-            Works as a Full-stack developer and sometimes a DevOps engineer with
-            the role of tech lead building an ERP App on a start-up called Temis
-            Technology.
+            <BioYear>1997</BioYear>
+            Born in Santiago, Chile.
           </BioSection>
         </Section>
 
