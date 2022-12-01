@@ -1,5 +1,6 @@
 import Chakra from "components/Chakra";
 import Fonts from "components/Fonts";
+import GoogleAnalytics from "components/GoogleAnalytics";
 import MainLayout from "components/layouts/Main";
 import { AnimatePresence } from "framer-motion";
 import { AppProps } from "next/app";
@@ -13,6 +14,7 @@ const Website: FC<AppProps> = ({ Component, pageProps, router }) => {
   return (
     <Chakra cookies={pageProps.cookies}>
       <Fonts />
+      <GoogleAnalytics />
       <MainLayout router={router}>
         <AnimatePresence
           exitBeforeEnter

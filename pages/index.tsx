@@ -17,6 +17,7 @@ import { ChevronRightIcon } from "@chakra-ui/icons";
 import { IoLogoInstagram, IoLogoGithub, IoMail } from "react-icons/io5";
 import thumbReactImageArea from "public/images/works/react-image-area_banner.png";
 import thumbChilepostbot from "public/images/works/chilepostbot.jpg";
+import thumbFut from "public/images/works/fut_tactics_home.png";
 import Image from "next/image";
 import ArticleLayout from "components/layouts/Article";
 import Section from "components/Section";
@@ -41,7 +42,7 @@ const Home = () => {
           bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
           css={{ backdropFilter: "blur(10px)" }}
         >
-          Hello, I&apos;m a software developer based in Santiago, Chile!
+          Hello, I&apos;m a Software Developer based in Santiago, Chile!
         </Box>
 
         <Box display={{ md: "flex" }}>
@@ -49,7 +50,7 @@ const Home = () => {
             <Heading as="h2" variant="page-title">
               Byron Mu&#241;oz
             </Heading>
-            <p> Full-Stack Developer</p>
+            <p>Full Stack Developer</p>
           </Box>
           <Box
             flexShrink={0}
@@ -73,6 +74,7 @@ const Home = () => {
                 borderRadius="full"
                 width="100%"
                 height="100%"
+                priority={true}
               />
             </Box>
           </Box>
@@ -83,16 +85,15 @@ const Home = () => {
             Work
           </Heading>
           <Paragraph>
-            Byron is a full-stack developer based in Santiago, Chile. With a
+            Byron is a full stack developer based in Santiago, Chile. With a
             passion for learning different topics related to
             programming/technology stuff. He has a knack for learning things
             fast, problem-solving and finding bugs. When he&apos;s not online
             loves hanging out with his wife and cats, sometimes playing Xbox and
-            watching TV. Currently, he is working on a company called Option
-            with a project for BHP. In his free time, he works on his side
-            project called{" "}
-            <NextLink href="/works/chilepostbot" passHref scroll={false}>
-              <Link>Chilepostbot 1810</Link>
+            watching TV. Currently, he is working on a company called Option. In
+            his free time, he works on his side project called{" "}
+            <NextLink href="/works/fut-tactics" passHref scroll={false}>
+              <Link>FUT Tactics</Link>
             </NextLink>
             .
           </Paragraph>
@@ -111,12 +112,15 @@ const Home = () => {
           </Heading>
           <BioSection>
             <BioYear>2022 to present</BioYear>
-            Works as a Full-stack developer on a project for BHP in a company
-            called Option.
+            Works as a Full Stack developer at{" "}
+            <Link href="https://www.option.cl/" target="_blank">
+              Option
+            </Link>
+            .
           </BioSection>
           <BioSection>
             <BioYear>2020 - 2022</BioYear>
-            Worked as a Full-stack developer and sometimes a DevOps engineer
+            Worked as a Full Stack developer and sometimes a DevOps engineer
             with the role of tech lead building an ERP App on a start-up called
             Temis Technology.
           </BioSection>
@@ -133,7 +137,7 @@ const Home = () => {
           </BioSection>
           <BioSection>
             <BioYear>2018 - 2020</BioYear>
-            Freelance Developer
+            Freelance Developer.
           </BioSection>
           <BioSection>
             <BioYear>2015 - 2017</BioYear>Three years of computer science
@@ -215,6 +219,14 @@ const Home = () => {
               thumbnail={thumbReactImageArea}
             >
               First attempt at making a component library with React.
+            </GridItem>
+            <GridItem
+              href="https://fut-tactics.com/"
+              title="FUT Tactics"
+              thumbnail={thumbFut}
+            >
+              A place where Fifa players can create, share and vote custom
+              formation tactics.
             </GridItem>
             <GridItem
               href="/works/chilepostbot"

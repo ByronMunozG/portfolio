@@ -33,8 +33,6 @@ const MainLayout: FC<IMainLayoutProps> = ({ children, router }) => {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        {/* <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> */}
         <meta name="twitter:title" content="Byron Muñoz" />
         <meta property="og:site_name" content="Byron Muñoz" />
         <meta name="og:title" content="Byron Muñoz" />
