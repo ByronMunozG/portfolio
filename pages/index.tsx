@@ -1,4 +1,3 @@
-import NextLink from "next/link";
 import {
   Link,
   Container,
@@ -10,15 +9,18 @@ import {
   ListItem,
   useColorModeValue,
   chakra,
-  Flex,
   useToast,
+  Text,
 } from "@chakra-ui/react";
-import { ChevronRightIcon } from "@chakra-ui/icons";
-import { IoLogoInstagram, IoLogoGithub, IoMail } from "react-icons/io5";
+import {
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoMail,
+  IoLogoLinkedin,
+} from "react-icons/io5";
 import thumbReactImageArea from "public/images/works/react-image-area_banner.png";
-import thumbChilepostbot from "public/images/works/chilepostbot.jpg";
-import thumbFut from "public/images/works/fut_tactics_home.png";
 import Image from "next/image";
+import useNpmDownloads from "hooks/useNpmDownloads";
 import ArticleLayout from "components/layouts/Article";
 import Section from "components/Section";
 import Paragraph from "components/Paragraph";
@@ -31,6 +33,8 @@ const ProfileImage = chakra(Image, {
 
 const Home = () => {
   const toast = useToast();
+  const npmDownloads = useNpmDownloads("@bmunozg/react-image-area");
+
   return (
     <ArticleLayout>
       <Container maxW="100%">
@@ -42,7 +46,7 @@ const Home = () => {
           bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
           css={{ backdropFilter: "blur(10px)" }}
         >
-          Hello, I&apos;m a Software Developer based in Santiago, Chile!
+          Hello, I&apos;m a Software Engineer based in Santiago, Chile!
         </Box>
 
         <Box display={{ md: "flex" }}>
@@ -50,7 +54,7 @@ const Home = () => {
             <Heading as="h2" variant="page-title">
               Byron Mu&#241;oz
             </Heading>
-            <p>Full Stack Developer</p>
+            <p>Full Stack Software Engineer</p>
           </Box>
           <Box
             flexShrink={0}
@@ -82,28 +86,17 @@ const Home = () => {
 
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            Work
+            About
           </Heading>
           <Paragraph>
-            Byron is a full stack developer based in Santiago, Chile. With a
-            passion for learning different topics related to
-            programming/technology stuff. He has a knack for learning things
-            fast, problem-solving and finding bugs. When he&apos;s not online
-            loves hanging out with his wife and cats, sometimes playing Xbox and
-            watching TV. Currently, he is working on a company called Option. In
-            his free time, he works on his side project called{" "}
-            <NextLink href="/works/fut-tactics" passHref scroll={false}>
-              <Link>FUT Tactics</Link>
-            </NextLink>
-            .
+            Byron is a full stack software engineer based in Santiago, Chile,
+            with 7+ years of experience building scalable enterprise platforms
+            across complex industries. He has a passion for learning, a knack
+            for problem-solving and finding bugs, and a proven track record
+            delivering high-impact platforms for leading organisations in Latin
+            America. Outside of work, he spends time with his cats, play games,
+            or works on game development projects.
           </Paragraph>
-          <Flex justify="center" my={4}>
-            <NextLink href="/works" passHref scroll={false}>
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                My portfolio
-              </Button>
-            </NextLink>
-          </Flex>
         </Section>
 
         <Section delay={0.2}>
@@ -111,38 +104,32 @@ const Home = () => {
             Bio
           </Heading>
           <BioSection>
-            <BioYear>2022 to present</BioYear>
-            Works as a Full Stack developer at{" "}
-            <Link href="https://www.option.cl/" target="_blank">
-              Option
-            </Link>
-            .
+            <BioYear>Jun 2022 – Feb 2026</BioYear>
+            Worked as a Full Stack Developer at Option SpA, building enterprise
+            platforms for Codelco, LATAM Airlines, BHP, and Correos de Chile.
           </BioSection>
           <BioSection>
-            <BioYear>2020 - 2022</BioYear>
-            Worked as a Full Stack developer and sometimes a DevOps engineer
-            with the role of tech lead building an ERP App on a start-up called
-            Temis Technology.
+            <BioYear>Oct 2020 – Jun 2022</BioYear>
+            Tech Lead &amp; Full Stack Developer at Temis Technology SpA, owning
+            architecture and engineering standards for a SaaS platform.
           </BioSection>
           <BioSection>
-            <BioYear>2020</BioYear>
-            Worked as a React developer in 2 projects from a start up called
-            Wisely/Track & Trace.
+            <BioYear>Jun 2020 – Sep 2020</BioYear>
+            Frontend Developer at Wisely / Track &amp; Trace, building real-time
+            monitoring interfaces for industrial environments.
           </BioSection>
           <BioSection>
-            <BioYear>2018 - 2021</BioYear>
-            Higher technical degree in Computer Analyst Programming (
-            <q>Analista Programador Computacional</q> ) with two votes of
-            distinction.
+            <BioYear>2018 – 2021</BioYear>
+            Programmer Analyst degree at Duoc UC (
+            <q>Analista Programador Computacional</q>).
           </BioSection>
           <BioSection>
-            <BioYear>2018 - 2020</BioYear>
-            Freelance Developer.
+            <BioYear>Apr 2018 – May 2020</BioYear>
+            Freelance Full Stack Developer.
           </BioSection>
           <BioSection>
-            <BioYear>2015 - 2017</BioYear>Three years of computer science
-            engineer (<q>Ingeniería Civil en Informática</q>) - Andrés Bello
-            National University (drop out due to financial problems).
+            <BioYear>2015 – 2017</BioYear>
+            Computer Science initial cycle at Universidad Andrés Bello.
           </BioSection>
           <BioSection>
             <BioYear>1997</BioYear>
@@ -152,15 +139,34 @@ const Home = () => {
 
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
+            Projects
+          </Heading>
+          <SimpleGrid columns={[1, 2, 2]} gap={6} mt={1}>
+            <GridItem
+              href="/works/react-image-area"
+              title="react-image-area"
+              thumbnail={thumbReactImageArea}
+            >
+              A React component library for defining interactive image areas.
+              {npmDownloads !== null && (
+                <Text fontSize={12} mt={1} color="gray.500">
+                  {npmDownloads.toLocaleString()} downloads last month
+                </Text>
+              )}
+            </GridItem>
+          </SimpleGrid>
+        </Section>
+
+        <Section delay={0.4}>
+          <Heading as="h3" variant="section-title">
             I ♥
           </Heading>
           <Paragraph>
-            Music, Playing Drums, Working on fun Side Projects, Game Development
-            and especially my Wife/Cats.
+            Music, Game Development, and especially my Cats.
           </Paragraph>
         </Section>
 
-        <Section delay={0.3}>
+        <Section delay={0.5}>
           <Heading as="h3" variant="section-title">
             On the web
           </Heading>
@@ -173,6 +179,20 @@ const Home = () => {
                   leftIcon={<IoLogoGithub />}
                 >
                   @ByronMunozG
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://www.linkedin.com/in/byron-munoz-godoy/"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoLinkedin />}
+                >
+                  @byron-munoz-godoy
                 </Button>
               </Link>
             </ListItem>
@@ -211,31 +231,6 @@ const Home = () => {
               </Button>
             </ListItem>
           </List>
-
-          <SimpleGrid columns={[1, 2, 2]} gap={6} mt={1}>
-            <GridItem
-              href="https://www.npmjs.com/package/@bmunozg/react-image-area"
-              title="react-image-area"
-              thumbnail={thumbReactImageArea}
-            >
-              First attempt at making a component library with React.
-            </GridItem>
-            <GridItem
-              href="https://fut-tactics.com/"
-              title="FUT Tactics"
-              thumbnail={thumbFut}
-            >
-              A place where Fifa players can create, share and vote custom
-              formation tactics.
-            </GridItem>
-            <GridItem
-              href="/works/chilepostbot"
-              title="Chilepostbot 1810"
-              thumbnail={thumbChilepostbot}
-            >
-              A bot that posts randomly generated memes to social media.
-            </GridItem>
-          </SimpleGrid>
         </Section>
       </Container>
     </ArticleLayout>

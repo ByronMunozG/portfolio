@@ -83,9 +83,6 @@ const Navbar: FC<INavbarProps> = (props) => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path}>
-            Works
-          </LinkItem>
           <LinkItem
             target="_blank"
             href="https://github.com/ByronMunozG/portfolio"
@@ -114,9 +111,6 @@ const Navbar: FC<INavbarProps> = (props) => {
               <MenuList>
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
                 <MenuItem
                   as={Link}

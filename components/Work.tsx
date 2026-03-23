@@ -5,6 +5,7 @@ import { FC, PropsWithChildren } from "react";
 
 export const Title: FC<PropsWithChildren<{}>> = ({ children }) => (
   <Box>
+    {/* breadcrumb hidden while there is only one work item
     <NextLink href="/works" passHref>
       <Link>Works</Link>
     </NextLink>
@@ -12,6 +13,7 @@ export const Title: FC<PropsWithChildren<{}>> = ({ children }) => (
       {" "}
       <ChevronRightIcon />{" "}
     </span>
+    */}
     <Heading display="inline-block" as="h3" fontSize={20} mb={4}>
       {children}
     </Heading>

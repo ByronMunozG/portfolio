@@ -11,6 +11,7 @@ interface IBaseGridItem {
 }
 interface IGridItem extends IBaseGridItem {
   href: string;
+  isExternal?: boolean;
 }
 
 export const GridItem: FC<IGridItem> = ({
@@ -18,8 +19,9 @@ export const GridItem: FC<IGridItem> = ({
   href,
   title,
   thumbnail,
-}) => (
-  <Box w="100%" textAlign="center">
+  isExternal = false,
+}) => {
+  const content = (
     <LinkBox cursor="pointer">
       {thumbnail && (
         <Image
@@ -30,13 +32,25 @@ export const GridItem: FC<IGridItem> = ({
           loading="lazy"
         />
       )}
-      <LinkOverlay href={href} target="_blank">
+      <LinkOverlay href={href} target={isExternal ? "_blank" : undefined}>
         <Text mt={2}>{title}</Text>
       </LinkOverlay>
       <Text fontSize={14}>{children}</Text>
     </LinkBox>
-  </Box>
-);
+  );
+
+  return (
+    <Box w="100%" textAlign="center">
+      {isExternal ? (
+        content
+      ) : (
+        <NextLink href={href} passHref scroll={false}>
+          {content}
+        </NextLink>
+      )}
+    </Box>
+  );
+};
 
 interface IWorkGridItem extends IBaseGridItem {
   id: string;
