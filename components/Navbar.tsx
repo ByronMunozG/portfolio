@@ -97,7 +97,7 @@ const Navbar: FC<INavbarProps> = (props) => {
           </LinkItem>
         </Stack>
 
-        <Flex flex={1} justify={{ md: "flex-end" }}>
+        <Flex flex={1} justify="flex-end">
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: "inline-block", md: "none" }}>
@@ -109,9 +109,6 @@ const Navbar: FC<INavbarProps> = (props) => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
                 <MenuItem
                   as={Link}
                   href="https://github.com/ByronMunozG/portfolio"
