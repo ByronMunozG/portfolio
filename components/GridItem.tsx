@@ -1,13 +1,12 @@
 import NextLink from "next/link";
-import Image, { StaticImageData } from "next/image";
-import { Box, Text, LinkBox, LinkOverlay } from "@chakra-ui/react";
+import { Box, Text, LinkBox, LinkOverlay, Image } from "@chakra-ui/react";
 import { Global } from "@emotion/react";
 import { FC, ReactNode } from "react";
 
 interface IBaseGridItem {
   children?: ReactNode;
   title: string;
-  thumbnail?: StaticImageData;
+  thumbnail?: string;
 }
 interface IGridItem extends IBaseGridItem {
   href: string;
@@ -28,7 +27,7 @@ export const GridItem: FC<IGridItem> = ({
           src={thumbnail}
           alt={title}
           className="grid-item-thumbnail"
-          placeholder="blur"
+          borderRadius="12px"
           loading="lazy"
         />
       )}
@@ -70,7 +69,7 @@ export const WorkGridItem: FC<IWorkGridItem> = ({
             src={thumbnail}
             alt={title}
             className="grid-item-thumbnail"
-            placeholder="blur"
+            borderRadius="12px"
           />
         )}
         <LinkOverlay href={`/works/${id}`}>

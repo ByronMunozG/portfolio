@@ -8,9 +8,9 @@ import {
   List,
   ListItem,
   useColorModeValue,
-  chakra,
   useToast,
   Text,
+  Image,
 } from "@chakra-ui/react";
 import {
   IoLogoInstagram,
@@ -18,8 +18,6 @@ import {
   IoMail,
   IoLogoLinkedin,
 } from "react-icons/io5";
-import thumbReactImageArea from "public/images/works/react-image-area_banner.png";
-import Image from "next/image";
 import useNpmDownloads from "hooks/useNpmDownloads";
 import ArticleLayout from "components/layouts/Article";
 import Section from "components/Section";
@@ -27,9 +25,6 @@ import Paragraph from "components/Paragraph";
 import { BioSection, BioYear } from "components/Bio";
 import { GridItem } from "components/GridItem";
 
-const ProfileImage = chakra(Image, {
-  shouldForwardProp: (prop) => ["width", "height", "src", "alt"].includes(prop),
-});
 
 const Home = () => {
   const toast = useToast();
@@ -72,13 +67,12 @@ const Home = () => {
               borderRadius="full"
               overflow="hidden"
             >
-              <ProfileImage
+              <Image
                 src="/images/byron.jpg"
                 alt="Profile image"
                 borderRadius="full"
                 width="100%"
                 height="100%"
-                priority={true}
               />
             </Box>
           </Box>
@@ -145,7 +139,7 @@ const Home = () => {
             <GridItem
               href="/works/react-image-area"
               title="react-image-area"
-              thumbnail={thumbReactImageArea}
+              thumbnail="/images/works/react-image-area_banner.png"
             >
               A React component library for defining interactive image areas.
               {npmDownloads !== null && (

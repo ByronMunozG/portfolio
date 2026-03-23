@@ -1,6 +1,5 @@
 import { Container, Heading, SimpleGrid } from "@chakra-ui/react";
 
-import thumbReactImageArea from "public/images/works/react-image-area_banner.png";
 import ArticleLayout from "components/layouts/Article";
 import Section from "components/Section";
 import { WorkGridItem } from "components/GridItem";
@@ -17,7 +16,7 @@ const Works = () => (
           <WorkGridItem
             id="react-image-area"
             title="React Image Area"
-            thumbnail={thumbReactImageArea}
+            thumbnail="/images/works/react-image-area_banner.png"
           >
             A React component library for defining interactive image areas.
           </WorkGridItem>
